@@ -1,0 +1,42 @@
+{
+  "name": "caramelo-smart-contracts",
+  "scripts": {
+    "compile": "forge compile",
+    "test": "forge test --fork-url https://bsc-dataseed.binance.org/ -vv",
+    "deploy": "forge script scripts/Deploy.s.sol:DeployCaramelo --rpc-url https://data-seed-prebsc-2-s2.bnbchain.org:8545 --broadcast",
+    "deploy-testnet": "forge script scripts/Deploy.s.sol:DeployCaramelo --rpc-url https://data-seed-prebsc-2-s2.bnbchain.org:8545 --broadcast",
+    "test-full": "forge test --fork-url https://bsc-dataseed.binance.org/ -vvvv",
+    "coverage": "forge coverage --no-match-coverage 'test/.*.sol'",
+    "clean": "rm -rf node_modules",
+    "cache": "npx hardhat clean"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-foundry": "^1.1.2",
+    "@nomicfoundation/hardhat-toolbox": "3.0.0",
+    "@nomiclabs/hardhat-etherscan": "3.1.7",
+    "@openzeppelin/contracts-upgradeable": "4.9.6",
+    "@openzeppelin/hardhat-upgrades": "2.4.1",
+    "@typescript-eslint/eslint-plugin": "5.59.11",
+    "@typescript-eslint/parser": "5.59.11",
+    "dotenv": "16.3.1",
+    "eslint": "8.54.0",
+    "eslint-config-prettier": "8.8.0",
+    "eslint-config-standard": "17.1.0",
+    "eslint-plugin-import": "2.29.0",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-promise": "6.1.1",
+    "hardhat": "^2.22.16",
+    "prettier": "2.8.8",
+    "ts-node": "^10.9.2",
+    "typescript": "5.3.3"
+  },
+  "dependencies": {
+    "@ethersproject/providers": "5.7.2",
+    "@openzeppelin/contracts": "5.0.0",
+    "@openzeppelin/upgrades-core": "1.31.1",
+    "ethers": "6.8.1",
+    "solidity-docgen": "^0.6.0-beta.36"
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+}

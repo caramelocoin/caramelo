@@ -1,0 +1,22 @@
+[profile.default]
+src = "contracts"
+test = "test"
+out = "build"
+libs = ["node_modules", "lib"]
+cache_path = "cache_forge"
+solc_version = "0.8.22"
+optimizer = true
+optimizer_runs = 400
+via_ir = true
+
+
+etherscan_api_key = "${ETHERSCAN_API_KEY}"
+
+[rpc_endpoints]
+bsc = "${BSC_RPC_URL}"
+bsc_testnet = "https://data-seed-prebsc-1-s1.binance.org:8545/"
+
+[profile.coverage]
+src = ["contracts"]
+match_path = ["contracts/Token.sol", "contracts/CarameloPresale.sol"]
+exclude_paths = ["test"]

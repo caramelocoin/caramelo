@@ -1,0 +1,8 @@
+.deployed
+.openzeppelin
+artifacts
+node_modules
+cache
+cache_forge
+typechain
+.env
