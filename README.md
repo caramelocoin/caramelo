@@ -31,15 +31,6 @@ The Caramelo Token is a comprehensive ERC20-compliant token designed for advance
   - Redistribution of fees to holders based on balances.
 
 ---
-## Commands to deploy the contract
-
-```shell
-forge script scripts/Deploy.s.sol:DeployCaramelo --rpc-url https://data-seed-prebsc-1-s1.binance.org:8545/ --broadcast --private-key $PRIVATE_KEY
-```
-
-```shell
-forge verify-contract --chain-id 97 --compiler-version 0.8.22 0x367e257B64457B0C558735766f42f17B110D7709 contracts/Token.sol:Token
-```
 
 ## Contract Details
 
